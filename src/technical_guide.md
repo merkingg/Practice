@@ -151,12 +151,14 @@ bot.py (Python, Railway)
 ### 2.4 Структура файлов
 
 ```
-src/
-├── bot.py              ← основная логика (все функции бота)
-├── requirements.txt    ← список зависимостей Python
-├── Procfile            ← инструкция запуска для Railway
-├── technical manual    ← техническое руководство
-└── final report        ← финальный отчет
+Practice/
+└──src/
+    ├── bot.py              ← основная логика (все функции бота)
+    ├── requirements.txt    ← список зависимостей Python
+    ├── Procfile            ← инструкция запуска для Railway
+    ├── technical manual    ← техническое руководство
+    └── final report        ← финальный отчет
+
 
 ```
 
