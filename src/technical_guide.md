@@ -152,10 +152,10 @@ bot.py (Python, Railway)
 
 ```
 Practice/
+└─ Procfile            	    ← инструкция запуска для Railway
 └──src/
     ├── bot.py              ← основная логика (все функции бота)
     ├── requirements.txt    ← список зависимостей Python
-    ├── Procfile            ← инструкция запуска для Railway
     ├── technical manual    ← техническое руководство
     └── final report        ← финальный отчет
 
