@@ -137,9 +137,6 @@ nav a:hover {
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
-
-
-
 .container {
     max-width: 100%;
     margin-left: 25px;   
@@ -219,9 +216,6 @@ li {
     text-align: center;
 }
 
-
-
-
 .team-page .member {
     display: flex;
     align-items: center;
@@ -263,9 +257,6 @@ li {
     margin: 0 0 8px 0;
     font-size: 20px;
 }
-
-
-
 
 .resources-page {
     max-width: 1200px;
@@ -329,9 +320,6 @@ li {
     transform: translateX(5px);
 }
 
-
-
-
 .about-page .about-hero {
     display: flex;
     align-items: center;
@@ -394,4 +382,272 @@ li {
    transform: translate(-30%, -15%) rotate(-5deg); 
     z-index: 1;
     opacity: 0.95;
+}
+
+@media (max-width: 900px) {
+
+    
+    nav {
+        padding: 12px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    nav a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    
+    .landing-page {
+        margin: 20px auto;
+        padding: 0 16px;
+    }
+
+    .landing-page .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .landing-page .features-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .landing-page .activities-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    
+    .resources-grid {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .resource-card {
+        width: calc(50% - 10px);
+    }
+
+    
+    .about-page .about-hero {
+        gap: 25px;
+        padding: 30px;
+    }
+
+    .about-page .about-text h1 {
+        font-size: 30px;
+    }
+
+    .about-page .about-visual {
+        width: 280px;
+        height: 200px;
+    }
+
+    .about-page .main-ill {
+        width: 320px;
+    }
+
+    .about-page .second-ill {
+        width: 200px;
+    }
+
+    
+    .journal-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        width: calc(50% - 10px);
+    }
+
+    
+    .team-page .avatar {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 10px 15px;
+        gap: 6px;
+    }
+
+    nav a {
+        margin-right: 8px;
+        font-size: 13px;
+    }
+
+    
+    .container {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    
+    .landing-page {
+        margin: 15px auto;
+        padding: 0 15px;
+    }
+
+    .landing-page .hero {
+        padding-bottom: 30px;
+    }
+
+    .landing-page .hero h1 {
+        font-size: 2rem;
+    }
+
+    .landing-page .hero-description {
+        font-size: 1rem;
+    }
+
+    .landing-page .features-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .landing-page .feature-card.large {
+        grid-column: span 1;
+    }
+
+    .landing-page .activities-section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .landing-page .result-tags {
+        max-width: 100%;
+    }
+
+    .landing-page .tag-item {
+        width: calc(50% - 8px);
+    }
+
+    
+    .about-page .about-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .about-page .about-text {
+        max-width: 100%;
+    }
+
+    .about-page .about-text h1 {
+        font-size: 26px;
+    }
+
+    .about-page .about-visual {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-page .about-visual::before {
+        width: 220px;
+        height: 220px;
+        top: -10px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-page .main-ill {
+        width: 240px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-75%, -55%);
+    }
+
+    .about-page .second-ill {
+        width: 160px;
+        transform: translate(-15%, -10%) rotate(-5deg);
+    }
+
+    
+    .journal-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+   
+    .team-page .member {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+
+    .team-page .avatar {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .team-page .info h2 {
+        font-size: 17px;
+    }
+
+    
+    .resources-page {
+        max-width: 100%;
+    }
+
+    .resources-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .resource-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .resource-card img {
+        height: 160px;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    nav a {
+        font-size: 12px;
+        margin-right: 6px;
+    }
+
+    .landing-page .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .landing-page .tag-item {
+        width: 100%;
+    }
+
+    .about-page .main-ill {
+        width: 200px;
+    }
+
+    .about-page .second-ill {
+        width: 130px;
+    }
 }
